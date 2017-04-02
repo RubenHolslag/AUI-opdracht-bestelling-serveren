@@ -1,0 +1,110 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+<link rel="import" href="../bower_components/paper-dropdown-menu/paper-dropdown-menu-light.html">
+<link rel="import" href="../bower_components/paper-dropdown-menu/paper-dropdown-menu-shared-styles.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../bower_components/iron-form/iron-form.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="../bower_components/paper-menu/paper-menu.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+
+<dom-module id="my-view4">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+
+                padding: 10px;
+            }
+
+            .Bestellingen {
+                min-width: 100px;
+                text-align: left;
+                padding-left: 10px;
+            }
+
+            .reserveren {
+                max-width: 2px;
+
+            }
+
+            .status {
+                min-width: 100px;
+                text-align: right;
+                padding: 10px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            tr:nth-child(even) {
+                background: #CCC
+            }
+        </style>
+
+        <div class="card">
+            <h1>Gerecht serveren</h1>
+            <table>
+                <tr>
+                    <th class="Bestellingen">Bestellingen</th>
+                    <th class="reserveren">  </th>
+                    <th class="status">Status</th>
+                </tr>
+                <tr>
+                    <td class="Bestellingen">Bestelling 251</td>
+                    <td class="serveren"><input type="checkbox"></td>
+                    <td class="status">geserveerd</td>
+                </tr>
+                <tr>
+                    <td class="Bestellingen">Bestelling 252</td>
+                    <td class="serveren"><input type="checkbox"></td>
+                    <td class="status">geserveerd</td>
+                </tr>
+                <tr>
+                    <td class="Bestellingen">Bestelling 253</td>
+                    <td class="serveren"><input type="checkbox"></td>
+                    <td class="status">open</td>
+                </tr>
+                <tr>
+                    <td class="Bestellingen">Bestelling 254</td>
+                    <td class="serveren"><input type="checkbox"></td>
+                    <td class="status">open</td>
+                </tr>
+                <tr>
+                    <td class="Bestellingen">Bestelling 255</td>
+                    <td class="serveren"><input type="checkbox"></td>
+                    <td class="status">open</td>
+                </tr>
+            </table>
+            <center>
+                <paper-button raised class="indigo">Serveren</paper-button>
+            </center>
+        </div>
+
+    </template>
+
+    <script>
+        Polymer({
+            is: 'my-view4',
+        });
+    </script>
+</dom-module>
